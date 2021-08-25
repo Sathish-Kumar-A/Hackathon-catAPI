@@ -39,7 +39,6 @@ async function displaydata(){
 
 //Creating inside div elements
 async function catData(arr){
-    arr=arr.slice(0,5)
     for(var cat of arr){
         let catBox=document.createElement('div');
         catBox.setAttribute('class','catBox');
@@ -93,7 +92,6 @@ async function search(){
 //Creating image div for result images-----------------------
 
 async function displaySearch(array){
-    // array=array.slice(0,5);
     try{
         for(var search of array){
             let resultBox=document.createElement('div');
