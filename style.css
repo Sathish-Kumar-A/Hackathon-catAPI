@@ -80,6 +80,8 @@ body{
     z-index: 1;
     font-weight: bold;
     box-shadow: -2px -5px 10px rgba(50, 20, 33, 0.3);
+    font-family: 'Klee One', cursive;
+    font-family: 'Padauk', sans-serif;
 
 }
 .closebtn:hover{
