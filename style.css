@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
 }
+/* Title-------------------------------------------------------------------------------------------------- */
 .navi{
     display: flex;
     flex-flow: row wrap;
@@ -19,7 +20,8 @@ body{
 .title{
     color: #BF55EC;
 }
-/* Search box */
+
+/* Search box --------------------------------------------------------------------------------------------*/
 .searchbtn{
     color: white;
 }
@@ -37,15 +39,13 @@ body{
     width:250px;
     margin-right: 20px;
     color: #BF55EC;
-    /* margin-bottom: 10px; */
 }
-/* --------------------------Main Part----------------------- */
+/* Images Display------------------------------------------------------------------------ */
 .outer,.popOuter{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    /* background-color: #B3D9E5; */
     
 }
 .catBox{
@@ -64,7 +64,7 @@ body{
     transform: scale(1.07);
     transition: 0.7s ease-in-out;
 }
-/* PopUp */
+/* PopUp ----------------------------------------------------------------------------------------*/
 
 .closebtn{
     text-align: center;
@@ -80,8 +80,6 @@ body{
     z-index: 1;
     font-weight: bold;
     box-shadow: -2px -5px 10px rgba(50, 20, 33, 0.3);
-    font-family: 'Klee One', cursive;
-    font-family: 'Padauk', sans-serif;
 
 }
 .closebtn:hover{
@@ -104,7 +102,7 @@ body{
     display: none;
 }
 
-/* Media Screen */
+/* Responsive ---------------------------------------------------------------------------------------*/
 @media screen and (max-width:280px) {
     .catBox,.catimage{
         width:250px;

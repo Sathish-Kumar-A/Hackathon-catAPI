@@ -5,7 +5,9 @@ titileBar.innerHTML=`
 <img class="catGif" src="cat.gif" alt="">
 <h2 class="title">Meowww</h2>`
 document.body.append(titileBar);
+
 //--------------------------------------------------------------------
+
 //Search Box
 let container=document.createElement('div');
 container.setAttribute('class','boot');
@@ -21,6 +23,7 @@ document.body.append(container);
 //-----------------------------------------------------------------------------
 
 //outer box of each image box
+
 let outerContainer=document.createElement('div');
 outerContainer.setAttribute('class','outer')
 container.append(outerContainer);
@@ -39,6 +42,7 @@ async function displaydata(){
 
 //Creating inside div elements
 async function catData(arr){
+    // arr=arr.slice(0,5)
     for(var cat of arr){
         let catBox=document.createElement('div');
         catBox.setAttribute('class','catBox');
@@ -57,6 +61,7 @@ async function catData(arr){
     }
 }
 displaydata();
+
 //----------------------------------------------------------------------------------------------------------------------
 //Pop up Box
 let pop=document.createElement('div');
@@ -89,9 +94,10 @@ async function search(){
         console.log("search error");
     }
 }
-//Creating image div for result images-----------------------
 
+//Creating image div for result images-----------------------
 async function displaySearch(array){
+    // array=array.slice(0,5);
     try{
         for(var search of array){
             let resultBox=document.createElement('div');
