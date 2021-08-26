@@ -49,7 +49,7 @@ async function catData(arr){
         try{
             const catImage=await fetch(link);
             catBox.innerHTML=`
-            <img  class="catimage" src="${catImage.url}" alt="I'm Lost">
+            <img  class="catimage" src="${catImage.url}" alt="I'm Lost" loading="lazy">
 
         `
         outerContainer.append(catBox)
@@ -102,7 +102,7 @@ async function displaySearch(array){
             resultBox.setAttribute('class','catBox resultBox');
             const searchFetch=await fetch("https://cataas.com/cat/"+search.id);
             resultBox.innerHTML=`
-            <img class="catimage" src="${searchFetch.url}">`
+            <img class="catimage" src="${searchFetch.url}" loading="lazy">`
             popContainer.append(resultBox);
         }
 
